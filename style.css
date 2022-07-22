@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+#headshot {
+    height: 100vh;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;    
+    transform: translateX(-200px);
+    transform: scale(1.15);
+    position: fixed;
+    z-index: -1;
+    width: 35%;
+    object-fit: cover;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 40px;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 3rem;
+    background-color: white;
+    z-index: 1;
+}
+
+nav .nav-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+nav h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    min-width: 50%;
+    margin-right: 5rem;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+    flex-wrap: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color .1s linear;
+}
+
+nav ul li a:hover {
+    color: rgb(0,208,130);
+}
+
+/* main */
+
+main {
+    display: flex;
+    width: 100%; 
+}
+
+main .left {
+    width: 40%;
+    min-height: 100vh;
+}
+
+main .center-container {
+    padding: 1rem;
+    width: 40%;
+    top: 50px;
+}
+
+main .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: min(4%, 4rem);
+    min-height: 100%;
+    border-left: 1px solid rgb(214, 214, 214);
+    position: fixed;
+    right: 0;
+    z-index: 0;
+}
+
+
+
+.center-container .content > * {
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.center-container #home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    color:rgb(0,208,130);
+}
+
+
+.fa {
+    font-size: 1rem;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color:black;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 50%;
+    transition: color .2s linear;
+    cursor: pointer;
+}
+
+.fa:hover {
+    color: rgb(0,208,130);
+}
