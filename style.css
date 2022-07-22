@@ -88,7 +88,7 @@ main .left {
 
 main .center-container {
     padding: 1rem;
-    width: 40%;
+    width: 45%;
     top: 50px;
 }
 
@@ -121,15 +121,17 @@ main .right {
 
 
 
-h1 {
+h1, h2 {
     font-size: 3.5rem;
     font-weight: 700;
     padding-bottom: 0;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color:rgb(0,208,130);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
@@ -147,4 +149,73 @@ h3 {
 
 .fa:hover {
     color: rgb(0,208,130);
+}
+
+.content{ 
+    width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.skills-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem;
+}
+
+.skill  {
+    line-height: 1;
+    font-size: 5rem;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .15s ease-out;
+}   
+
+.skill:hover {
+    transform: scale(1.15);
+    text-shadow: 2px 2px 10px #b2b2b2;
+}
+
+.fa-html5 {
+    color: #f06529;
+}
+.fa-css3 {
+    color: #2965f1;
+}
+.fa-js {
+    color: #f0db4f;
+}
+.fa-react {
+    color: 	#61dafb;
+}
+.fa-node-js {
+    color: #68a063;
+}
+.fa-bootstrap {
+    color: #337ab7;
+}
+.fa-npm {
+    color: #cb3837;
+}
+.fa-git {
+    color: #f34f29
+}
+.fa-github {
+    color: #424242;
+}
+.fa-java {
+    color: 	#f89820;
+}
+.fa-python {
+    color: 	#628aac;
 }
