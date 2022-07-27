@@ -287,11 +287,12 @@ h3 {
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .project {
-    padding: 1rem;
+    margin: 1rem;
     min-width: max(250px, 20%);
     max-width: max(25%, 350px);
     height: auto;
