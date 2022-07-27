@@ -292,8 +292,8 @@ h3 {
 
 .project {
     padding: 1rem;
-    width: max(200px, 20%);
-    max-width: max(25%, 300px);
+    min-width: max(250px, 20%);
+    max-width: max(25%, 350px);
     height: auto;
     width: 15vw;
     text-align: center;
@@ -305,6 +305,7 @@ h3 {
 
 .project h6{
     font-weight: bold;
+    font-size: 1.15rem;
 }
 
 .project p {
