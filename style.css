@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(244, 244, 244);
@@ -106,7 +110,7 @@ main .right {
 }
 
 .center-container section {
-    padding: 20vh 0;
+    padding: 10vh 0;
     border-bottom: 1px solid grey;
 }
 
@@ -124,9 +128,47 @@ main .right {
     justify-content: center;
     margin: 0;
     padding: 0;
+    animation: fadeIn 1s
 }
 
+.center-container #home #icon-container {
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid rgba(11, 11, 11, 0.132);
+    border-radius: 50%;
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
 
+.center-container #home #scrollDown {
+    color: black;
+    animation: 1.5s linear infinite normal bounce, fadeIn 3s ease-in;
+    -webkit-animation: 1.5s linear infinite normal bounce, fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes bounce { 
+    0%, 100% {transform: translateY(0);} 
+    25% {transform: translateY(3px);} 
+    75% {transform: translateY(-3px);} 
+ } 
+ 
+ @keyframes bounce { 
+    0%, 100% {transform: translateY(0);} 
+    25% {transform: translateY(3px);} 
+    75% {transform: translateY(-3px);} 
+ }
+ 
+ .bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
 
 h1, h2 {
     font-size: 3.5rem;
