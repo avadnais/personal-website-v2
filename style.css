@@ -86,13 +86,13 @@ main {
 }
 
 main .left {
-    width: 40%;
+    width: 45%;
     min-height: 100vh;
 }
 
 main .center-container {
     padding: 1rem;
-    width: 45%;
+    width: 40%;
     top: 50px;
 }
 
@@ -101,7 +101,7 @@ main .right {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    min-width: min(4%, 4rem);
+    min-width: min(5%, 6rem);
     min-height: 100%;
     border-left: 1px solid rgb(214, 214, 214);
     position: fixed;
@@ -119,6 +119,10 @@ main .right {
 .center-container .content > * {
     padding: .5rem 0;
     line-height: 1.5;
+}
+
+.container .content > h1 {
+    line-height: 1.2;
 }
 
 .center-container #home {
@@ -148,6 +152,10 @@ main .right {
     -webkit-animation: 1.5s linear infinite normal bounce, fadeIn 3s ease-in;
 }
 
+.p-wrapper {
+    width: 67%;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -171,16 +179,23 @@ main .right {
  }
 
 h1, h2 {
-    font-size: 3.5rem;
     font-weight: 700;
     padding-bottom: 0;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
 h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color:rgb(0,208,130);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 
@@ -267,4 +282,34 @@ h3 {
 }
 .fa-python {
     color: 	#628aac;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project {
+    padding: 1rem;
+    width: max(200px, 20%);
+    max-width: max(25%, 300px);
+    height: auto;
+    width: 15vw;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project h6{
+    font-weight: bold;
+}
+
+.project p {
+    margin: .5rem;
+    font-size: .8rem;
+    color: rgb(0,208,130);
+    font-weight: bold;
 }
