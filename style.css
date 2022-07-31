@@ -37,6 +37,7 @@ nav {
     border-radius: 3rem;
     background-color: white;
     z-index: 1;
+    transition: all 350ms ease-in;
 }
 
 nav .nav-content {
@@ -76,6 +77,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(0,208,130);
+}
+
+nav .nav-toggler {
+    font-size: 1.5rem;;
+    display: none;
+    cursor: pointer;
 }
 
 /* main */
@@ -401,4 +408,55 @@ li p {
     main .right {
         display: none;
     }
+
+    nav {
+        min-height: 20px;
+        justify-content: flex-start;
+        padding: 1rem;
+        height: auto;
+        transition: all 350ms ease-in;
+    }
+
+    nav .nav-content {
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 3rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-items {
+        animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    nav .nav-items[data-visible='true'] {
+        opacity: 1;
+    }
+
+    nav .nav-items[data-visible='false'] {
+        opacity: 0;
+        display: none;
+    }
+
+    nav .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 0 2rem;
+    }
+
+
 }
