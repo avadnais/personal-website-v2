@@ -412,7 +412,7 @@ li p {
     nav {
         min-height: 20px;
         justify-content: flex-start;
-        padding: 1rem;
+        padding: 1.5rem;
         height: auto;
         transition: all 350ms ease-in;
     }
@@ -421,6 +421,7 @@ li p {
         flex-direction: column;
         text-align: start;
         align-items: flex-start;
+        padding-left: 1rem;
     }
 
     nav ul {
@@ -455,7 +456,7 @@ li p {
         display: block;
         position: absolute;
         right: 0;
-        margin: 0 2rem;
+        margin: 0 3rem;
     }
 
 
