@@ -307,14 +307,14 @@ li p {
 
 .project {
     margin: 1rem;
-    min-width: max(250px, 27%);
+    min-width: max(230px, 27%);
     max-width: max(300px, 20%);
     height: auto;
     text-align: center;
     flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.24);
-    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border-radius: .5rem;
 }
 
 .project img {
@@ -342,4 +342,63 @@ li p {
 
 .project i:hover {
     color: rgb(0,208,130);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    nav ul {
+        margin-right: 1rem;;
+    }
+
+    main .center-container {
+        width: 60%;
+    }
+
+    .project {
+        min-width: max(200px, 27%);
+        max-width: max(300px, 20%);
+    }
+
+    main .right {
+        position: absolute;
+        flex-direction: row;
+        align-items: flex-end;
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #headshot{
+        display: none;
+    }
+    nav {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    .container {
+        height: 30vh;
+    }
+
+    .main #home {
+        min-height: auto;
+    }
+
+    main .left {
+        width: 0;
+    }
+
+    main .center-container {
+        width: 80%;
+    }
+
+    main .right {
+        display: none;
+    }
 }
