@@ -325,6 +325,8 @@ li p {
 }
 
 .project img {
+    object-fit: cover;
+    min-height: 60%;
     width: 100%;
 }
 
