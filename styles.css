@@ -176,6 +176,10 @@ h2 {
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px; /* Adjust this value as needed */
 }
 
 .skill-item:hover {
